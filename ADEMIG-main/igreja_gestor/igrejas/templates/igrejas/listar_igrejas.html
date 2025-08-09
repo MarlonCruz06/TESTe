@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Igrejas</title>
+</head>
+<body>
+    <h1>Igrejas</h1>
+    <ul>
+        {% for igreja in igrejas %}
+            <li>{{ igreja.nome }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

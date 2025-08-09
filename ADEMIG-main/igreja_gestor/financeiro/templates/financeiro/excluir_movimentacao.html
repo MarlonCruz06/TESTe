@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excluir Movimentação</title>
+</head>
+<body>
+    <h1>Excluir Movimentação</h1>
+    <p>Tem certeza que deseja excluir a movimentação {{ movimentacao.descricao }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+# This file is intentionally empty. The project uses Django's built-in forms for user creation and authentication.

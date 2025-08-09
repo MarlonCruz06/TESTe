@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excluir Membro</title>
+</head>
+<body>
+    <h1>Excluir Membro</h1>
+    <p>Tem certeza que deseja excluir o membro {{ membro.nome }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+    </form>
+</body>
+</html>

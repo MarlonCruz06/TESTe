@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excluir Igreja</title>
+</head>
+<body>
+    <h1>Excluir Igreja</h1>
+    <p>Tem certeza que deseja excluir a igreja {{ igreja.nome }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+    </form>
+</body>
+</html>

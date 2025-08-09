@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Movimentações</title>
+</head>
+<body>
+    <h1>Movimentações</h1>
+    <ul>
+        {% for movimentacao in movimentacoes %}
+            <li>{{ movimentacao.descricao }} - {{ movimentacao.valor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
